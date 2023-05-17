@@ -20,7 +20,7 @@ namespace BlogApp.Service.Services
 
         public List<Yorum> GetAllByYazarId(int yazarId)
         {
-            return _yorumRepository.GetAllByYazarId(yazarId);
+            return _yorumRepository.GetAllByYazarId(yazarId); 
         }
         
     }

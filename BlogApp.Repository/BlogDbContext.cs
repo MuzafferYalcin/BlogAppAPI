@@ -7,7 +7,6 @@ namespace BlogApp.Repository
     {
         public BlogDbContext(DbContextOptions options) : base(options)
         {
-
         }
         public DbSet<Yazar> Yazarlar { get; set; }
         public DbSet<Yorum> Yorumlar { get; set; }

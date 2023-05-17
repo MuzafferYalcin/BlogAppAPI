@@ -46,7 +46,5 @@ namespace BlogApp.Repository.Repositories
             updateEntity.State = EntityState.Modified;
             _context.SaveChanges();
         }
-        
-       
     }
 }

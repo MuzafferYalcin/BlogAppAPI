@@ -23,7 +23,7 @@ namespace BlogApp.API.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet("[action]")]
+        [HttpGet("[action]/{blogId}")]
         public IActionResult GetAllBlogId(int blogId)
         {
             var blog = _blogService.Get(b => b.Id == blogId);
@@ -36,7 +36,7 @@ namespace BlogApp.API.Controllers
             return Ok(CustomResponseDto<List<YorumDto>>.Success(200, yorumDtos)); 
         }
 
-        [HttpPost("[action]/{yazarId}/{blogId}")]
+        [HttpPost("[action]/Yazar/{yazarId}/blog/{blogId}")]
         public IActionResult PostYorum(int blogId , int yazarId , YorumDto yorumDto )
         {
             var blog = _blogService.Get(b => b.Id ==blogId);
