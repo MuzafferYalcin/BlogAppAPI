@@ -13,7 +13,7 @@ namespace BlogApp.API.Controllers
     public class YorumController : ControllerBase
     {
         private readonly IMapper _mapper;
-        private readonly IBlogService _blogService;
+        private readonly IBlogService _blogService; 
         private readonly IYorumService _yorumService;
 
         public YorumController(IYorumService yorumService, IBlogService blogService, IMapper mapper)

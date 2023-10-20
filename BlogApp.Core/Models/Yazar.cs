@@ -12,6 +12,6 @@
         public string? Hobiler { get; set; }
         public bool IsAdmin { get; set; }
         public ICollection<Blog>Bloglar { get; set; }
-        public ICollection<Yorum> Yorumlar { get; set; }
+        public List<Yorum> Yorumlar { get; set; }
     }
 }

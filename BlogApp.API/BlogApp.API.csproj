@@ -21,4 +21,8 @@
     <ProjectReference Include="..\BlogApp.Service\BlogApp.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="uploadItems\" />
+  </ItemGroup>
+
 </Project>
